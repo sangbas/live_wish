@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Nivea';
+    src: url("assets/font-awesome/fonts/NiveaBoldText.otf") format("opentype");
+}
+
+.title {
+    text-align: center;
+    font-size: 70px;
+    margin: 20px;
+}
+
+.subtitle {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Nivea', Fallback, sans-serif;
+    color: #11357E;
+}
+
+.chart {
+    margin-top: 30px;
+}
+
+#barchart_values {
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    text-align: center; 
+}
+
+.block {
+    width: 20%;
+    display:inline-block;
+}
+
+img.resize {
+    width:auto; /* you can use % */
+    height: 120px;
+    margin: 20px;
+}
+
+.round-button {
+	width: 20%;
+    display:inline-block;
+    padding: 20px;
+}
+.round-button-circle {
+	width: 100%;
+	height:0;
+	padding-bottom: 100%;
+    border-radius: 50%;
+	border:10px solid #cfdcec;
+    overflow:hidden;
+    
+    background: #4679BD; 
+    box-shadow: 0 0 3px gray;
+}
+.round-button-circle:hover {
+	background:#30588e;
+}
+.round-button a {
+    display:block;
+	float:left;
+	width:90%;
+	padding-top:50%;
+    padding-bottom:50%;
+	line-height:1em;
+	margin-top:-0.5em;
+    
+	text-align:center;
+	color:#e2eaf3;
+    font-family:Verdana;
+    font-size:1.2em;
+    font-weight:bold;
+    text-decoration:none;
+    text-align: center;
+}
