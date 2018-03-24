@@ -42,7 +42,7 @@
             </span>
             
             <div id="feed">
-                <?php //include('feed-post.php');?>    
+                <?php include('feed-post.php');?>    
             </div>
             	
 		</div>

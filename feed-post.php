@@ -8,7 +8,7 @@
                 while($row = mysqli_fetch_assoc($result)) {
                     $name = $row["name"];
                     $message = $row["message"];
-                    echo '<div class="wrap-input100 validate-input">'.$name.'<br/>'.$message.'</div>';
+                    echo '<div class="borderimg1">'.$name.'<br/>'.$message.'</div>';
                 }
             }
 ?>
