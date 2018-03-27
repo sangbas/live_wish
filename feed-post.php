@@ -8,7 +8,10 @@
                 while($row = mysqli_fetch_assoc($result)) {
                     $name = $row["name"];
                     $message = $row["message"];
-                    echo '<div class="borderimg1">'.$name.'<br/>'.$message.'</div>';
+                    echo '<div class="borderimg1">';
+                    echo '<div class="post-title">'.$name.'</div>';
+                    echo '<div class="post-content">'.$message.'</div>';
+                    echo '</div>';
                 }
             }
 ?>

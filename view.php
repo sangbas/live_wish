@@ -23,7 +23,6 @@
             
             var container = $("#feed");
             
-            container.load("feed-post.php");
             var refreshId = setInterval(function()
             {
                 console.log('sdsd');
@@ -37,8 +36,8 @@
 
 	<div class="container-contact100">
 		<div class="wrap-contact100">
-            <span class="contact100-form-title">
-                CREATE AND SHARE YOUR WISH 
+            <span class="form-title">
+                CREATE AND SHARE<br/>YOUR WISH 
             </span>
             
             <div id="feed">

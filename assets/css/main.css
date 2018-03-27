@@ -34,6 +34,7 @@ body, html {
 	height: 100%;
     margin: 0;
 	font-family: Raleway-SemiBold, sans-serif;
+    background: #f3ebde;
 }
 
 
@@ -165,17 +166,50 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: #d867c6;
-  background: -webkit-linear-gradient(45deg, #c77ff2, #e8519e);
-  background: -o-linear-gradient(45deg, #c77ff2, #e8519e);
-  background: -moz-linear-gradient(45deg, #c77ff2, #e8519e);
-  background: linear-gradient(45deg, #c77ff2, #e8519e);
+  background: #092950;
+  background: -webkit-linear-gradient(45deg, #092950, #092950);
+  background: -o-linear-gradient(45deg, #092950, #092950);
+  background: -moz-linear-gradient(45deg, #092950, #092950);
+  background: linear-gradient(45deg, #092950, #092950);
   
+}
+
+.container-tablet {
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-image: url("../img/bg.jpg");
+  background-position: left bottom; /*Positioning*/
+  background-repeat: no-repeat; /*Prevent showing multiple background images*/
+  background-attachment: fixed;
+/*
+  background: #f3ebde;
+  background: -webkit-linear-gradient(45deg, #f3ebde, #f3ebde);
+  background: -o-linear-gradient(45deg, #f3ebde, #f3ebde);
+  background: -moz-linear-gradient(45deg, #f3ebde, #f3ebde);
+  background: linear-gradient(45deg, #f3ebde, #f3ebde);
+*/
+
 }
 
 .wrap-contact100 {
   width: 790px;
-  background: #fff;
+  background: #092950;
+  border-radius: 2px;
+  padding: 55px 95px 68px 95px;
+}
+
+.wrap-tablet {
+  width: 790px;
+  background: #f3ebde;
   border-radius: 2px;
   padding: 55px 95px 68px 95px;
 }
@@ -200,12 +234,33 @@ iframe {
   display: block;
   font-family: Raleway-Black;
   font-size: 30px;
-  color: #333333;
+  color: #fff;
   line-height: 1.2;
   text-align: center;
   padding-bottom: 45px;
 }
 
+.form-title {
+  width: 100%;
+  display: block;
+  font-family: Raleway-Black;
+  font-size: 40px;
+  color: #fff;
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: 45px;
+}
+
+.post-title {
+    font-size: 20px;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.post-content {
+    font-size: 15px;
+    color: #fff;
+}
 
 
 /*------------------------------------------------------------------
@@ -238,7 +293,7 @@ iframe {
 .input100 {
   display: block;
   width: 100%;
-  background: transparent;
+  background: #fff;
   font-family: Raleway-SemiBold;
   font-size: 18px;
   color: #333333;
@@ -311,13 +366,13 @@ textarea.input100 {
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-end;
   margin-top: -4px;
 }
 
 .contact100-form-btn {
   font-family: Raleway-Bold;
-  font-size: 16px;
+  font-size: 26px;
   color: #fff;
   line-height: 1.2;
 
@@ -330,13 +385,13 @@ textarea.input100 {
   align-items: center;
   padding: 0 20px;
   min-width: 150px;
-  height: 55px;
-  border-radius: 27px;
-  background: #d867c6;
-  background: -webkit-linear-gradient(45deg, #c77ff2, #e8519e);
-  background: -o-linear-gradient(45deg, #c77ff2, #e8519e);
-  background: -moz-linear-gradient(45deg, #c77ff2, #e8519e);
-  background: linear-gradient(45deg, #c77ff2, #e8519e);
+  height: 45px;
+  border-radius: 5px;
+  background: #162e52;
+  background: -webkit-linear-gradient(45deg, #162e52, #162e52);
+  background: -o-linear-gradient(45deg, #162e52, #162e52);
+  background: -moz-linear-gradient(45deg, #162e52, #162e52);
+  background: linear-gradient(45deg, #162e52, #162e52);
   position: relative;
   z-index: 1;
 
@@ -346,27 +401,7 @@ textarea.input100 {
   transition: all 0.4s;
 }
 
-.contact100-form-btn::before {
-  content: "";
-  display: block;
-  position: absolute;
-  z-index: -1;
-  border-radius: 27px;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: #333333;
-  opacity: 1;
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
-}
 
-.contact100-form-btn:hover:before {
-  opacity: 0;
-}
 
 .contact100-form-btn i {
   -webkit-transition: all 0.4s;
@@ -387,13 +422,13 @@ textarea.input100 {
 [ Responsive ]*/
 
 @media (max-width: 768px) {
-  .wrap-contact100 {
+  .wrap-contact100 .wrap-tablet {
     padding: 55px 45px 68px 45px;
   }
 }
 
 @media (max-width: 576px) {
-  .wrap-contact100 {
+  .wrap-contact100 .wrap-tablet {
     padding: 55px 15px 68px 15px;
   }
 
